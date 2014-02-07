@@ -10,9 +10,13 @@
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" href="bootsie/css/bootstrap.min.css">
+	    <link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/flipper.css" />
 		<script src="js/modernizr.custom.js"></script>
+		<script src="js/common.js"></script>
 	</head>
 	<body>
 		<div id="fb-root"></div>
@@ -20,7 +24,7 @@
 		  var js, fjs = d.getElementsByTagName(s)[0];
 		  if (d.getElementById(id)) return;
 		  js = d.createElement(s); js.id = id;
-		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=255521874623141";
+		  js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1&appId=255521874623141";
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
 		<div class="container">
@@ -28,8 +32,8 @@
 				<span>Alana</span>
 				<h2>Flower Petaler</h2>
 				<nav>
-					<a href="http://tympanus.net/Blueprints/ResponsiveFullWidthGrid/" class="icon-arrow-left" data-info="previous Blueprint">Previous Blueprint</a>
-					<a href="http://tympanus.net/codrops/?p=14667" class="icon-drop" data-info="back to the Codrops article">back to the Codrops article</a>
+					<a href="#" onclick="animationClick('pageUpContent', 'fadeInUp')" class="icon-arrow-left" data-info="previous Blueprint">Previous Blueprint</a>
+					<a href="#" onclick="$('#myModal').modal('toggle');" class="icon-drop" data-info="back to the Codrops article">back to the Codrops article</a>
 					<!-- <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div> -->
 				</nav>
 			</header>	
@@ -49,10 +53,10 @@
 				</div>
 			</div>
 		</div>
-		<!-- Button trigger modal -->
-<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
+		<div class="animated bounce" id="pageUpContent">
+			
+		</div>
+		
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -63,7 +67,7 @@
         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
       <div class="modal-body">
-        ...
+         
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
