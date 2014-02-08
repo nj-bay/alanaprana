@@ -1,24 +1,36 @@
 /* entire container, keeps perspective */
 .flip-container {
+
+	-webkit-perspective: 1000;
 	perspective: 1000;
+
+	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 }
 	/*  UPDATED! flip the pane when hovered */
 	.flip-container:hover .back {
+
+		-webkit-transform: rotateY(0deg);
 		transform: rotateY(0deg);
 	}
 	.flip-container:hover .front {
+
+		-webkit-transform: rotateY(180deg);
 	    transform: rotateY(180deg);
 	}
 
 .flip-container, .front, .back {
-	width: 320px;
-	height: 480px;
+	width: 180px;
+	height: 250px;
 }
 
 /* flip speed goes here */
 .flipper {
+
+	-webkit-transition: 0.6s;
 	transition: 0.6s;
+
+	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 
 	position: relative;
@@ -26,8 +38,13 @@
 
 /* hide back of pane during swap */
 .front, .back {
+	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+
+	-webkit-transition: 0.6s;
 	transition: 0.6s;
+
+	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 
 	position: absolute;
@@ -38,10 +55,29 @@
 /*  UPDATED! front pane, placed above back */
 .front {
 	z-index: 2;
+	/*background: lightgreen;*/
+
+	-webkit-transform: rotateY(0deg);
 	transform: rotateY(0deg);
 }
 
 /* back, initially hidden pane */
 .back {
+	/*background: lightblue;*/
+
+	-webkit-transform: rotateY(180deg);
 	transform: rotateY(-180deg);
 }
+
+.front img{
+	max-width:180px; 
+	max-height:220px;
+	margin: 0px
+}
+
+.back img{
+	max-width:180px; 
+	max-height:220px;
+	margin: 0px
+}
+
