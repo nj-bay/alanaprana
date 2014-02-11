@@ -95,6 +95,7 @@ a:hover {
 	text-indent: -8000px;
 }
 
+
 .container > header nav a:after {
 	content: attr(data-info);
 	color: #47a3da;
@@ -116,7 +117,8 @@ a:hover {
 }
 
 .icon-drop:before, 
-.icon-arrow-left:before {
+.icon-arrow-left:before,
+.icon-mail:before {
 	font-family: 'fontawesome';
 	position: absolute;
 	top: 0;
@@ -141,6 +143,13 @@ a:hover {
 	content: "\e000";
 }
 
+.icon-mail:before {
+	/*content: url("http://i.stack.imgur.com/tKsDb.png");*/
+	content: "E";
+	/*color: #47a3da;*/
+}
+
 .icon-arrow-left:before {
 	content: "\f060";
 }
+

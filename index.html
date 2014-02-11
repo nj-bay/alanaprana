@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Flowers: By Alana Prana</title>
+		<title>Flower Time</title>
 		<meta name="description" content="Blueprint: Background Slideshow" />
 		<meta name="keywords" content="blueprint, background image slideshow, fullscreen slideshow, jquery, fullscreen image, web development" />
 		<meta name="author" content="Codrops" />
@@ -35,8 +35,25 @@
 				<span>Alana</span>
 				<h2>Flower Petaler</h2>
 				<nav>
+				
 					<a href="#" onclick="animationClick('pageUpContent', 'fadeInUp')" class="icon-arrow-left" data-info="Make your own Boquet">Make your own Boquet</a>
+
 					<a href="#" onclick="$('#myModal').modal('toggle');" class="icon-drop" data-info="View my Portfolio">View my Portfolio</a>
+
+					<a href="#" onclick="$('#myModal2').modal('toggle');" class="icon-mail" data-info="Email">Email</a>
+
+
+					<!--
+					<button type="button" class="btn btn-default">
+  						<span class="glyphicon glyphicon-leaf"></span> Star
+					</button>
+					<button type="button" class="btn btn-default">
+  						<span class="glyphicon glyphicon-camera"></span> Star
+					</button>
+					<button type="button" class="btn btn-default">
+  						<span class="glyphicon glyphicon-envelope"></span> Star
+					</button>
+					-->
 					<!-- <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div> -->
 				</nav>
 			</header>	
@@ -59,7 +76,24 @@
 		<div class="animated bounce" id="pageUpContent">
 			
 		</div>
-		
+
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModal2Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModal2Label">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <a href="mailto:youremailaddress">Email Me</a> 
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>	
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -223,6 +257,17 @@
     </div>
   </div>
 </div>
+
+<!-- Button trigger modal -->
+<!-- <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button -->
+
+<!-- Modal -->
+
+
+
+
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="js/bootbox.min.js"></script>
 		<!-- imagesLoaded jQuery plugin by @desandro : https://github.com/desandro/imagesloaded -->
