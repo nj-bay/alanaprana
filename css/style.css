@@ -8,3 +8,13 @@
 .flip-container {
 	float:left;
 }
+
+#back_content {
+	background: #3299CC;
+	border: 1px solid #344152;
+	color: #FFFFFF;
+	text-align: center;
+	width: 180px;
+	height: 220px;
+
+}
