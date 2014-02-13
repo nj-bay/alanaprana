@@ -75,7 +75,7 @@ function populateDiv(element) {
 //*
 
 	for (i = 0; i < flower_map_front.length; i++) {
-		if (i%3==0) {
+		if (i%6==0) {
 			element.innerHTML += row_template;
 		}
 

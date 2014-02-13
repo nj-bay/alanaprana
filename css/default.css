@@ -140,16 +140,18 @@ a:hover {
 }
 
 .icon-drop:before {
-	content: "\e000";
+	content: "\f152";
 }
 
 .icon-mail:before {
-	/*content: url("http://i.stack.imgur.com/tKsDb.png");*/
-	content: "E";
+	content: "\f040";
+	/*content: url("../images/mail.gif");*/
+	/*content: "E";*/
+	font-weight: bold;
 	/*color: #47a3da;*/
 }
 
 .icon-arrow-left:before {
-	content: "\f060";
+	content: "\f06c";
 }
 
