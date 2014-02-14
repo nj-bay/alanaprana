@@ -3,7 +3,7 @@
 
 function animationClick(element, animation){
 
-	//checking if container has the element page up content
+	//checking if container has the element pageUpContent
 	if ($('.container #pageUpContent').length) {
 		//if the element is hidden execute this block
 		if( element_byId.style.display == "none") {
@@ -124,7 +124,7 @@ $( document ).ready(function() {
 		console.log("fetching: " + flower_map_back[i]);
 	}
 });
-// populates the element with the content from wiki using the maps specified above
+// populates the element with the content from wiki using the array specified above
 function populateDiv(element) {
 
 //*
